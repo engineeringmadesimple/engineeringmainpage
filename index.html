@@ -3,35 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Understanding Gender in French</title>
+    <title>Engineering Genius Academy</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Understanding Gender in French</h1>
-        <div id="quiz-container">
-            <div id="question-container">
-                <h2 id="question">Loading question...</h2>
-                <div id="options-container">
-                    <!-- Options will be dynamically added here -->
-                </div>
-            </div>
-            <div id="timer-container">
-                <span id="timer">10</span> seconds left
-            </div>
-            <button id="next-button" class="hidden">Next Question</button>
+    <div class="mobile-notice" id="mobileNotice">
+        📱 For the best experience, please rotate your device to landscape mode.
+        <button class="notice-close" onclick="this.parentElement.style.display='none'">×</button>
+    </div>
+    <nav class="navbar">
+        <div class="logo">Engineering Genius Academy</div>
+        <button class="hamburger" id="hamburgerMenu">&#9776;</button>
+        <div class="nav-links" id="navLinks">
+            <a href="https://videolectures101.github.io/engineeringvideolecture/" target="_blank">Video Lectures</a>
+            <a href="https://engineeringquiz101.github.io/engineeringquiz/" target="_blank">Test Your Knowledge</a>
+            <a href="#" class="resources-link">
+                <span>Downloadable Resources</span>
+                <i class="lock-icon">🔒</i>
+                <div class="upgrade-tooltip">Upgrade to Pro to unlock</div>
+            </a>
+            <a href="https://engineeringquiz101.github.io/PracticeQuestions/" target="_blank">Practice Questions</a>
         </div>
+    </nav>
+
+    <div class="upgrade-banner">
+        <a href="https://pricingpage101.github.io/pricings/" class="upgrade-link">
+            <span class="pro-button">🌟 Upgrade to Pro! 🌟</span>
+        </a>
+        <a href="https://pricingpage101.github.io/donation/" class="donate-link">
+            <span class="donate-button">💝 Donate Here! 💝</span>
+        </a>
     </div>
 
-    <!-- Donate Section -->
-    <div class="donate-section">
-        <h2>Please Donate</h2>
-        <p>Your support helps us maintain this platform and continue offering free education.</p>
-        <div class="donate-info">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX1j8_1o20igEk7AJyDYrJ_cH3dBXBr6jwuw&usqp=CAU" alt="Wave Logo" class="wave-logo">
-            <p>Phone Number: <strong>3709558</strong></p>
+    <div class="container">
+        <h1>Welcome to Engineering Genius Academy</h1>
+        <p>Your comprehensive online engineering learning platform. Master mechanical, civil, electrical, and other engineering disciplines with expert-curated content.</p>
+        
+        <div class="feature-grid">
+            <div class="feature-box">
+                <h2>Personalized Learning</h2>
+                <p>Customizable study paths for engineering students at all levels.</p>
+            </div>
+            <div class="feature-box">
+                <h2>Expert Tutors</h2>
+                <p>Learn from experienced engineers and educators.</p>
+            </div>
+            <div class="feature-box">
+                <h2>Interactive Content</h2>
+                <p>Engaging video lectures, design challenges, and downloadable resources.</p>
+            </div>
+        </div>
+
+        <section id="donate" class="donate-section">
+            <h2 class="donation-title">Support Free Engineering Education</h2>
+            <div class="donation-image-container">
+                <img src="https://example.com/engineering-education.jpg"
+                     alt="Engineering students in a workshop" 
+                     class="donation-image"
+                     loading="lazy">
+            </div>
+            <p class="donation-description">
+                Help us provide free engineering resources and tools to aspiring professionals worldwide. Donate today to empower future innovators!
+            </p>
+        </section>
+    </div>
+
+    <div class="telegram-popup" id="telegramPopup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div class="popup-header">
+                <img src="https://logos-world.net/wp-content/uploads/2021/03/Telegram-Symbol.png" 
+                     alt="Telegram Logo" 
+                     class="telegram-logo">
+                <h2>🚨 Limited Time Access! 🚨</h2>
+            </div>
+            <div class="popup-body">
+                <p class="urgent-msg">⚠️ Our Telegram group is closing in less than 24 hours!</p>
+                <p>Join our exclusive Telegram channel to access:</p>
+                <ul>
+                    <li>📚 Free Video Lectures</li>
+                    <li>📝 Study Materials</li>
+                    <li>👥 Community Support</li>
+                    <li>🎯 Practice Questions</li>
+                </ul>
+                <a href="https://t.me/engineeringhub101" class="join-btn" target="_blank">
+                    Join Now Before It's Too Late!
+                </a>
+            </div>
         </div>
     </div>
+    <footer class="footer">
+        <p>&copy; 2024 Engineering Genius Academy. All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
